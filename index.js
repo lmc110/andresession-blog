@@ -1,0 +1,17 @@
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var bodyParser = require('body-parser');
+
+
+// set listening port for local testing
+app.set('port', (process.env.PORT || 5000));
+
+app.get('/', function(req, res, next){
+res.sendFile(__dirname + '/public/index.html')
+});
+
+
+server.listen(app.get('port'), '0.0.0.0', function() {
+  console.log('Node app is running on port', app.get('port'));
+});
