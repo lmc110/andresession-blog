@@ -11,6 +11,9 @@ app.get('/', function(req, res, next){
 res.sendFile(__dirname + '/public/home.html')
 });
 
+// set public folder for stylesheets
+app.use(express.static(__dirname + '/public'));
+
 
 server.listen(app.get('port'), '0.0.0.0', function() {
   console.log('Node app is running on port', app.get('port'));
