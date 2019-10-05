@@ -1,16 +1,24 @@
 {
-  "name": "testingproject",
+  "name": "andresession-blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmc110/andresession-blog.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.17.1"
-  }
+  "bugs": {
+    "url": "https://github.com/lmc110/andresession-blog/issues"
+  },
+  "homepage": "https://github.com/lmc110/andresession-blog#readme"
 }

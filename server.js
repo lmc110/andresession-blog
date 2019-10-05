@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res, next){
-res.sendFile(__dirname + '/public/index.html')
+res.sendFile(__dirname + '/public/home.html')
 });
 
 
